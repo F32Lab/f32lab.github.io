@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlertFilo - F32Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Lora:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">F32</span>
+      F32Lab
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="datafilo.html">DataFilo</a></li>
+      <li><a href="alertfilo.html">AlertFilo</a></li>
+      <li><a href="contatto.html">Contatto</a></li>
+    </ul>
+    <a href="contatto.html" class="nav-cta">Richiedi -&gt;</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html">Home</a>
+    <a href="datafilo.html">DataFilo</a>
+    <a href="alertfilo.html">AlertFilo</a>
+    <a href="contatto.html">Contatto</a>
+    <a href="contatto.html" class="m-cta">Richiedi -&gt;</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero-split alert-theme">
+    <div class="hero-inner">
+
+      <div>
+        <div class="service-pill yellow fade">AlertFilo - Monitoraggio cambiamenti</div>
+        <h1 class="fade" style="color:var(--cream);">Saprai per primo<br />quando qualcosa<br /><em style="color:var(--alert);">cambia.</em></h1>
+        <p class="hero-sub fade">Scegli cosa monitorare - un sito che pubblica file, una pagina che aggiorna dati, un prezzo che cambia. AlertFilo controlla per te e ti avvisa via email nel momento esatto.</p>
+        <div class="hero-actions fade">
+          <a href="contatto.html" class="btn-alert">Richiedi AlertFilo</a>
+          <a href="#come-funziona" class="btn-ghost">Come funziona</a>
+        </div>
+      </div>
+
+      <!-- Notification mockup -->
+      <div class="notif-stack fade">
+        <div class="notif">
+          <div class="notif-dot"></div>
+          <div>
+            <div class="notif-title">AlertFilo - Cambiamento rilevato</div>
+            <div class="notif-text">comune-lugano.ch - pubblicato nuovo documento: <strong>Verbale CdC marzo 2025.pdf</strong></div>
+            <div class="notif-time">oggi, 09:14</div>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="notif-dot"></div>
+          <div>
+            <div class="notif-title">AlertFilo - Cambiamento rilevato</div>
+            <div class="notif-text">tabella-orari.ch - aggiornati gli orari della linea 4: <strong>3 modifiche rilevate</strong></div>
+            <div class="notif-time">oggi, 09:14</div>
+          </div>
+        </div>
+        <div class="notif dimmed">
+          <div class="notif-dot muted"></div>
+          <div>
+            <div class="notif-title muted">AlertFilo - Nessuna variazione</div>
+            <div class="notif-text">portale-gara.ch - nessuna nuova pubblicazione</div>
+            <div class="notif-time">oggi, 09:14</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="section alt" id="casi-uso">
+    <div class="container">
+      <div class="eyebrow" style="color:var(--alert);">Cosa puoi monitorare</div>
+      <h2>Non perderti mai<br /><em style="color:var(--alert);">un cambiamento importante.</em></h2>
+      <p class="sec-sub">Configuri una volta - AlertFilo monitora continuamente e ti avvisa solo quando c'e' qualcosa di nuovo.</p>
+      <div class="use-cases">
+        <div class="uc yellow">
+          <span class="uc-icon yellow">file</span>
+          <h3>Nuovi file pubblicati</h3>
+          <p>Un ente o portale pubblica documenti periodicamente? Ti avvisiamo appena appare qualcosa di nuovo.</p>
+        </div>
+        <div class="uc yellow">
+          <span class="uc-icon yellow">dati</span>
+          <h3>Aggiornamento di dati o tabelle</h3>
+          <p>Una pagina aggiorna statistiche, orari o disponibilita'? Ricevi una notifica nel momento esatto.</p>
+        </div>
+        <div class="uc yellow">
+          <span class="uc-icon yellow">prezzi</span>
+          <h3>Variazioni di prezzo</h3>
+          <p>Imposta una soglia e ti avvisiamo quando un prodotto scende sotto quel prezzo, su qualsiasi sito.</p>
+        </div>
+        <div class="uc yellow">
+          <span class="uc-icon yellow">custom</span>
+          <h3>Qualsiasi altra variazione</h3>
+          <p>Se una pagina cambia in qualsiasi modo e vuoi saperlo, probabilmente possiamo monitorarla. Scrivici.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="come-funziona">
+    <div class="container">
+      <div class="eyebrow" style="color:var(--alert);">Come funziona</div>
+      <h2>Configuri una volta,<br /><em style="color:var(--alert);">AlertFilo lavora sempre.</em></h2>
+      <p class="sec-sub">Nessuna app da installare, nessun account da gestire. Solo una email quando conta davvero.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num" style="color:var(--alert);">01</div>
+          <h3>Dimmi cosa monitorare</h3>
+          <p>Mandaci il sito, la pagina o l'elemento da controllare e cosa ti interessa sapere quando cambia.</p>
+        </div>
+        <div class="step">
+          <div class="step-num" style="color:var(--alert);">02</div>
+          <h3>Configuriamo il monitor</h3>
+          <p>Attiviamo il controllo automatico entro pochi giorni dall'accettazione del preventivo.</p>
+        </div>
+        <div class="step">
+          <div class="step-num" style="color:var(--alert);">03</div>
+          <h3>Arriva la notifica</h3>
+          <p>Quando qualcosa cambia, ricevi una email con tutti i dettagli - cosa e' cambiato, quando, dove.</p>
+        </div>
+        <div class="step">
+          <div class="step-num" style="color:var(--alert);">04</div>
+          <h3>Aggiungi o modifica</h3>
+          <p>Vuoi aggiungere elementi da monitorare o cambiare configurazione? Basta scriverci.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section alt">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Cosa vorresti non<br /><em style="color:var(--alert);">perderti mai piu'?</em></h2>
+          <p>Scrivici - valutiamo gratuitamente e configuriamo AlertFilo per te in pochi giorni.</p>
+        </div>
+        <a href="contatto.html" class="btn-alert">Richiedi AlertFilo -&gt;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">F32</span>
+        F32Lab
+      </a>
+      <div class="footer-links">
+        <a href="datafilo.html">DataFilo</a>
+        <a href="alertfilo.html">AlertFilo</a>
+        <a href="contatto.html">Contatto</a>
+      </div>
+      <p>2025 F32Lab - Svizzera</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
