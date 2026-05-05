@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    fetch('https://formspree.io/f/meenkqle', {
+
+    /* ── Option A: Formspree (recommended) ──────────────────
+    fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: new FormData(form)
@@ -26,6 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Errore. Riprova o scrivici direttamente via email.');
     });
     return;
+    ──────────────────────────────────────────────────────── */
+
+    // Option B: demo (remove when Formspree is set up)
+    showSuccess();
   });
 
   function showSuccess() {

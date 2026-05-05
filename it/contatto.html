@@ -18,90 +18,65 @@
       F32Lab
     </a>
     <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="datafilo.html">DataFilo</a></li>
       <li><a href="alertfilo.html">AlertFilo</a></li>
       <li><a href="contatto.html">Contatto</a></li>
     </ul>
-    <a href="../index.html" class="nav-back">&larr; Home</a>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Apri menu" aria-expanded="false">
+    <div class="lang-switch">
+      <a href="../it/#" data-lang="it">IT</a>
+      <span class="lang-sep">/</span>
+      <a href="../en/contact.html" data-lang="en">EN</a>
+    </div>
+    <a href="../index.html" class="nav-back"><- Home</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <div class="mobile-menu" id="mobile-menu">
-    <a href="../index.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="datafilo.html">DataFilo</a>
     <a href="alertfilo.html">AlertFilo</a>
     <a href="contatto.html">Contatto</a>
+    <div class="mobile-lang">
+      <a href="../it/contatto.html" data-lang="it">IT - Italiano</a>
+      <a href="../en/contact.html" data-lang="en">EN - English</a>
+    </div>
+    
   </div>
 
-  <!-- Contact split layout -->
   <main class="contact-page">
 
-    <!-- Left info panel -->
     <div class="contact-left">
       <div class="contact-left-inner">
         <div class="eyebrow">Contatto</div>
         <h1>Dimmi di cosa<br />hai <em>bisogno.</em></h1>
         <p class="sub">Compila il form con i dettagli della tua richiesta. Ti rispondo entro 48 ore con una valutazione gratuita e un preventivo.</p>
-
         <div class="service-selector">
-          <div class="svc-badge">
-            <span class="svc-dot green"></span>
-            <span class="svc-name">DataFilo</span>
-            <span class="svc-desc">Scaricamento dati e file</span>
-          </div>
-          <div class="svc-badge">
-            <span class="svc-dot yellow"></span>
-            <span class="svc-name">AlertFilo</span>
-            <span class="svc-desc">Monitoraggio cambiamenti</span>
-          </div>
+          <div class="svc-badge"><span class="svc-dot green"></span><span class="svc-name">DataFilo</span><span class="svc-desc">Scaricamento dati e file</span></div>
+          <div class="svc-badge"><span class="svc-dot yellow"></span><span class="svc-name">AlertFilo</span><span class="svc-desc">Monitoraggio cambiamenti</span></div>
         </div>
-
         <div class="info-cards">
-          <div class="info-card">
-            <span class="ic-tag">gratis</span>
-            <div>
-              <strong>Nessun impegno iniziale</strong>
-              <p>La valutazione e' gratuita. Decidi tu se procedere.</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <span class="ic-tag">48h</span>
-            <div>
-              <strong>Risposta rapida</strong>
-              <p>Ricevi un preventivo chiaro con tempi e costi entro due giorni lavorativi.</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <span class="ic-tag">sicuro</span>
-            <div>
-              <strong>Credenziali protette</strong>
-              <p>Non inserire password nel form - le raccogliamo privatamente dopo.</p>
-            </div>
-          </div>
+          <div class="info-card"><span class="ic-tag">gratis</span><div><strong>Nessun impegno iniziale</strong><p>La valutazione e' gratuita. Decidi tu se procedere.</p></div></div>
+          <div class="info-card"><span class="ic-tag">48h</span><div><strong>Risposta rapida</strong><p>Ricevi un preventivo chiaro entro due giorni lavorativi.</p></div></div>
+          <div class="info-card"><span class="ic-tag">sicuro</span><div><strong>Credenziali protette</strong><p>Non inserire password nel form - le raccogliamo privatamente dopo.</p></div></div>
         </div>
       </div>
     </div>
 
-    <!-- Right form panel -->
     <div class="contact-right">
       <h2>Invia la tua richiesta</h2>
-
       <form id="contact-form">
         <div class="form-stack">
-
           <div class="field">
             <label for="nome">Nome e cognome</label>
             <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required />
           </div>
-
           <div class="field">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="mario@esempio.com" required />
           </div>
-
           <div class="field">
             <label for="servizio">Servizio di interesse</label>
             <select id="servizio" name="servizio" required>
@@ -112,42 +87,32 @@
               <option value="altro">Non sono sicuro - aiutami a scegliere</option>
             </select>
           </div>
-
           <div class="field">
             <label for="sito">Sito di riferimento (opzionale)</label>
             <input type="text" id="sito" name="sito" placeholder="https://esempio.com" />
           </div>
-
           <div class="field">
             <label for="frequenza">Frequenza desiderata</label>
             <select id="frequenza" name="frequenza">
               <option value="">Seleziona...</option>
-              <option value="realtime">In tempo reale / appena disponibile</option>
+              <option value="realtime">In tempo reale</option>
               <option value="giornaliero">Ogni giorno</option>
               <option value="settimanale">Ogni settimana</option>
               <option value="mensile">Ogni mese</option>
               <option value="nonSo">Non so ancora</option>
             </select>
           </div>
-
           <div class="field last">
             <label for="messaggio">Descrivi la tua esigenza</label>
-            <textarea id="messaggio" name="messaggio" placeholder="Es: Vorrei ricevere una notifica quando il sito del comune pubblica nuovi documenti..." required></textarea>
+            <textarea id="messaggio" name="messaggio" placeholder="Es: Vorrei ricevere una notifica quando il sito pubblica nuovi documenti..." required></textarea>
           </div>
-
         </div>
-
         <div class="privacy-note">
           <span class="p-tag">nota</span>
           <p>Non inserire password o credenziali in questo form. Le raccoglieremo privatamente dopo la conferma del preventivo.</p>
         </div>
-
-        <button type="submit" class="btn-submit">
-          Invia richiesta
-          <span>-&gt;</span>
-        </button>
+        <button type="submit" class="btn-submit">Invia richiesta <span>-&gt;</span></button>
       </form>
-
       <div class="success-box" id="success-box">
         <span class="success-icon">&#10003;</span>
         <h2>Richiesta inviata!</h2>
@@ -157,7 +122,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <a href="../index.html" class="logo">
@@ -167,8 +131,9 @@
       <div class="footer-links">
         <a href="datafilo.html">DataFilo</a>
         <a href="alertfilo.html">AlertFilo</a>
+        <a href="contatto.html">Contatto</a>
       </div>
-      <p>2025 F32Lab - Svizzera</p>
+      <p>2025 F32Lab - Switzerland</p>
     </div>
   </footer>
 
