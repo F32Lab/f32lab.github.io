@@ -1,4 +1,4 @@
-/* F32Lab v3 — contact.js */
+/* F32Lab v3 - contact.js */
 document.addEventListener('DOMContentLoaded', function () {
   var form    = document.getElementById('contact-form');
   var success = document.getElementById('success-box');

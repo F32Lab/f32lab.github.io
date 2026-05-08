@@ -1,5 +1,5 @@
 /* ============================================================
-   F32Lab v3 — Base Design System
+   F32Lab v3 - Base Design System
    Per-page theming via data-theme on <body>
    Fonts: Cabinet Grotesk (display) + JetBrains Mono (code)
    ============================================================ */
@@ -10,7 +10,7 @@
 
 /* ── Theme tokens ── */
 
-/* HOME — deep forest green */
+/* HOME - deep forest green */
 :root,
 body[data-theme="home"] {
   --page-bg:      #0a1209;
@@ -27,7 +27,7 @@ body[data-theme="home"] {
   --noise-color:  rgba(109,222,143,0.025);
 }
 
-/* DATATHREAD — deep cobalt blue */
+/* DATATHREAD - deep cobalt blue */
 body[data-theme="data"] {
   --page-bg:      #080e1a;
   --page-surface: #0e1628;
@@ -43,7 +43,7 @@ body[data-theme="data"] {
   --noise-color:  rgba(91,163,255,0.025);
 }
 
-/* ALERTTHREAD — deep amber/orange */
+/* ALERTTHREAD - deep amber/orange */
 body[data-theme="alert"] {
   --page-bg:      #110c00;
   --page-surface: #1a1200;
@@ -59,7 +59,7 @@ body[data-theme="alert"] {
   --noise-color:  rgba(245,166,35,0.025);
 }
 
-/* CONTACT — neutral charcoal */
+/* CONTACT - neutral charcoal */
 body[data-theme="contact"] {
   --page-bg:      #0c0c0e;
   --page-surface: #131316;
@@ -212,10 +212,13 @@ h3 {
   border-radius: 3px;
   text-decoration: none;
   transition: all 0.2s;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  text-align: center;
   letter-spacing: 0.03em;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .btn-primary::after {
@@ -240,8 +243,11 @@ h3 {
   border-radius: 3px;
   text-decoration: none;
   transition: all 0.2s;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  text-align: center;
   letter-spacing: 0.03em;
+  box-sizing: border-box;
 }
 
 .btn-outline:hover { color: var(--cream); border-color: var(--page-accent); }
@@ -378,6 +384,14 @@ h3 {
 }
 
 .cta-band p { color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem; }
+
+/* CTA band button stays inline/auto-width */
+.cta-band .btn-primary,
+.cta-band .btn-outline {
+  width: auto;
+  display: inline-block;
+  white-space: nowrap;
+}
 
 /* ── Animations ── */
 

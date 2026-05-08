@@ -1,6 +1,6 @@
 # F32Lab
 
-Official website of **F32Lab** — custom data automation services for individuals and businesses in Switzerland.
+Official website of **F32Lab** - custom data automation services for individuals and businesses in Switzerland.
 
 ## Services
 

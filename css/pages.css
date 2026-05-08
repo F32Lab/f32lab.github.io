@@ -1,9 +1,9 @@
 /* ============================================================
-   F32Lab v3 — Page-specific Styles
+   F32Lab v3 - Page-specific Styles
    ============================================================ */
 
 /* ══════════════════════════════════════════════
-   HERO — shared base
+   HERO - shared base
    ══════════════════════════════════════════════ */
 
 .hero {
@@ -94,9 +94,21 @@
 
 .hero-actions {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.75rem;
   margin-bottom: 5rem;
+}
+
+/* On the main homepage hero, keep buttons side by side */
+.hero > .hero-inner .hero-actions {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hero > .hero-inner .hero-actions .btn-primary,
+.hero > .hero-inner .hero-actions .btn-outline {
+  width: auto;
+  display: inline-block;
 }
 
 /* Stats */
@@ -138,7 +150,7 @@
 }
 
 /* ══════════════════════════════════════════════
-   INDEX — service cards
+   INDEX - service cards
    ══════════════════════════════════════════════ */
 
 .service-cards {
@@ -250,7 +262,7 @@
 .service-card:hover .card-arrow { gap: 1rem; }
 
 /* ══════════════════════════════════════════════
-   DATATHREAD — Split hero + terminal
+   DATATHREAD - Split hero + terminal
    ══════════════════════════════════════════════ */
 
 .hero-split {
@@ -267,6 +279,13 @@
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: center;
+}
+
+/* Left column of split hero: flex column so buttons stretch full width */
+.hero-split .hero-inner > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .service-pill {
@@ -345,7 +364,7 @@
 .t-v { color: var(--page-accent); }
 .t-n { color: #b8c8d8; }
 
-/* DataThread use cases — example grid */
+/* DataThread use cases - example grid */
 .example-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -428,7 +447,7 @@
 }
 
 /* ══════════════════════════════════════════════
-   ALERTTHREAD — notification mockup
+   ALERTTHREAD - notification mockup
    ══════════════════════════════════════════════ */
 
 .notif-stack { display: flex; flex-direction: column; gap: 0.75rem; }
@@ -498,7 +517,7 @@
 }
 
 /* ══════════════════════════════════════════════
-   CONTACT — split layout
+   CONTACT - split layout
    ══════════════════════════════════════════════ */
 
 .contact-page {
@@ -743,7 +762,7 @@
 }
 
 /* ══════════════════════════════════════════════
-   DATATHREAD — Inbox mockup (replaces terminal)
+   DATATHREAD - Inbox mockup (replaces terminal)
    ══════════════════════════════════════════════ */
 
 .inbox-mockup {

@@ -1,4 +1,4 @@
-/* F32Lab v3 — main.js */
+/* F32Lab v3 - main.js */
 document.addEventListener('DOMContentLoaded', function () {
   var filename = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(function (a) {
