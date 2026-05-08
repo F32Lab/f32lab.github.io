@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DataThread - F32Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Lora:ital,wght@1,400;1,500&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/nav.css"/>
+    <link rel="stylesheet" href="../css/pages.css"/>
+</head>
+<body>
+
+<nav class="site-nav">
+    <a href="../index.html" class="logo">
+        <span class="logo-mark">F32</span>
+        F32Lab
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="datathread.html">DataThread</a></li>
+        <li><a href="alertthread.html">AlertFilo</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="lang-switch">
+        <a href="../it/datathread.html" data-lang="it">IT</a>
+        <span class="lang-sep">/</span>
+        <a href="../en/#" data-lang="en">EN</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Start -></a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="datathread.html">DataThread</a>
+    <a href="alertthread.html">AlertFilo</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-lang">
+        <a href="../it/datathread.html" data-lang="it">IT - Italiano</a>
+        <a href="../en/datathread.html" data-lang="en">EN - English</a>
+    </div>
+    <a href="contact.html" class="m-cta">Start -></a>
+</div>
+
+<section class="hero-split">
+    <div class="hero-inner">
+        <div>
+            <div class="service-pill green fade">DataThread - Data downloads</div>
+            <h1 class="fade">The files you need,<br/><em>already waiting.</em></h1>
+            <p class="hero-sub fade">Tell us which site you want data from. We configure it once and deliver
+                automatically - in the format you prefer, at the frequency you choose.</p>
+            <div class="hero-actions fade">
+                <a href="contact.html" class="btn-accent">Request DataThread</a>
+                <a href="#use-cases" class="btn-ghost">Use cases</a>
+            </div>
+        </div>
+        <div class="terminal fade">
+            <div class="terminal-bar">
+                <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+                <span class="terminal-title">DataThread-job.json</span>
+            </div>
+            <div class="terminal-body">
+                <span class="t-c">// client configuration</span><br/>
+                {<br/>
+                &nbsp;&nbsp;<span class="t-k">"site"</span>: <span class="t-v">"supplier-portal.ch"</span>,<br/>
+                &nbsp;&nbsp;<span class="t-k">"login"</span>: <span class="t-v">true</span>,<br/>
+                &nbsp;&nbsp;<span class="t-k">"target"</span>: <span class="t-v">"invoices/*.pdf"</span>,<br/>
+                &nbsp;&nbsp;<span class="t-k">"format"</span>: <span class="t-v">"PDF + Excel summary"</span>,<br/>
+                &nbsp;&nbsp;<span class="t-k">"schedule"</span>: <span class="t-v">"every monday 08:00"</span>,<br/>
+                &nbsp;&nbsp;<span class="t-k">"delivery"</span>: <span class="t-v">"email attachment"</span><br/>
+                }<br/><br/>
+                <span class="t-c">// active - next run mon 08:00</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt" id="use-cases">
+    <div class="container">
+        <div class="eyebrow">Use cases</div>
+        <h2>What you can<br/><em>download with DataThread</em></h2>
+        <p class="sec-sub">If it's on the web, we can probably automate it.</p>
+        <div class="use-cases">
+            <div class="uc green"><span class="uc-icon green">invoices</span>
+                <h3>Invoices from supplier portals</h3>
+                <p>Automatically log in to your supplier portal and download PDF invoices every month, hands-free.</p>
+            </div>
+            <div class="uc green"><span class="uc-icon green">tables</span>
+                <h3>Tables from public websites</h3>
+                <p>Schedules, statistics, official data from institutional sites - we extract and deliver in Excel or
+                    CSV.</p></div>
+            <div class="uc green"><span class="uc-icon green">documents</span>
+                <h3>Documents from private portals</h3>
+                <p>Contracts, certificates, reports - any downloadable document from a login-protected area.</p></div>
+            <div class="uc green"><span class="uc-icon green">data</span>
+                <h3>Bulk structured data</h3>
+                <p>Product lists, categories or any structured information - exported in JSON or CSV.</p></div>
+            <div class="uc green"><span class="uc-icon green">reports</span>
+                <h3>Periodic reports</h3>
+                <p>We build an automated report aggregating data from one or more sources and send it weekly.</p></div>
+            <div class="uc green"><span class="uc-icon green">custom</span>
+                <h3>Have a specific case?</h3>
+                <p>Describe what you need - we evaluate for free whether it's feasible.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="eyebrow">Delivery formats</div>
+        <h2>Receive data<br/><em>in the format you use.</em></h2>
+        <p class="sec-sub">We configure the output format based on your workflow.</p>
+        <div class="format-grid">
+            <div class="format-card"><span class="format-ext">.xlsx</span>
+                <p>Excel, ready to open and use</p></div>
+            <div class="format-card"><span class="format-ext">.csv</span>
+                <p>Universal, for any tool</p></div>
+            <div class="format-card"><span class="format-ext">.json</span>
+                <p>For developers and integrations</p></div>
+            <div class="format-card"><span class="format-ext">.pdf</span>
+                <p>Original files downloaded from the site</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt">
+    <div class="container">
+        <div class="cta-band">
+            <div>
+                <h2>Which file would you like<br/><em>to never download again?</em></h2>
+                <p>Describe your case - we evaluate for free and propose a tailored quote.</p>
+            </div>
+            <a href="contact.html" class="btn-accent">Request DataThread -></a>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <a href="../index.html" class="logo">
+            <span class="logo-mark">F32</span>
+            F32Lab
+        </a>
+        <div class="footer-links">
+            <a href="datathread.html">DataThread</a>
+            <a href="alertthread.html">AlertFilo</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p>2025 F32Lab - Switzerland</p>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>

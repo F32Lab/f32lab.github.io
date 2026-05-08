@@ -10,27 +10,32 @@
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', function () {
-  var form    = document.getElementById('contact-form');
-  var success = document.getElementById('success-box');
-  if (!form) return;
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('success-box');
+    if (!form) {
+        return;
+    }
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    fetch('https://formspree.io/f/meenkqle', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: new FormData(form)
-    }).then(function (r) {
-      if (r.ok) showSuccess();
-    }).catch(function () {
-      alert('Errore. Riprova o scrivici direttamente via email.');
+        fetch('https://formspree.io/f/meenkqle', {
+            method: 'POST',
+            headers: {'Accept': 'application/json'},
+            body: new FormData(form)
+        }).then(function (r) {
+            if (r.ok) {
+                showSuccess();
+            }
+        }).catch(function () {
+            alert('Errore. Riprova o scrivici direttamente via email.');
+        });
     });
-    return;
-  });
 
-  function showSuccess() {
-    form.style.display = 'none';
-    if (success) success.classList.add('show');
-  }
+    function showSuccess() {
+        form.style.display = 'none';
+        if (success) {
+            success.classList.add('show');
+        }
+    }
 });

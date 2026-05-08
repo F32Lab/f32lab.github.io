@@ -1,165 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Precision Data Automation - F32Lab</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Lora:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/nav.css" />
-  <link rel="stylesheet" href="../css/pages.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Precision Data Automation - F32Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Lora:ital,wght@1,400;1,500&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/nav.css"/>
+    <link rel="stylesheet" href="../css/pages.css"/>
 </head>
 <body>
 
-  <nav class="site-nav">
+<nav class="site-nav">
     <a href="../index.html" class="logo">
-      <span class="logo-mark">F32</span>
-      F32Lab
+        <span class="logo-mark">F32</span>
+        F32Lab
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="datafilo.html">DataFilo</a></li>
-      <li><a href="alertfilo.html">AlertFilo</a></li>
-      <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="datathread.html">DataFilo</a></li>
+        <li><a href="alertthread.html">AlertFilo</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="lang-switch">
-      <a href="../it/index.html" data-lang="it">IT</a>
-      <span class="lang-sep">/</span>
-      <a href="../en/#" data-lang="en">EN</a>
+        <a href="../it/index.html" data-lang="it">IT</a>
+        <span class="lang-sep">/</span>
+        <a href="../en/#" data-lang="en">EN</a>
     </div>
     <a href="contact.html" class="nav-cta">Start -></a>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
     </button>
-  </nav>
+</nav>
 
-  <div class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu" id="mobile-menu">
     <a href="index.html">Home</a>
-    <a href="datafilo.html">DataFilo</a>
-    <a href="alertfilo.html">AlertFilo</a>
+    <a href="datathread.html">DataFilo</a>
+    <a href="alertthread.html">AlertFilo</a>
     <a href="contact.html">Contact</a>
     <div class="mobile-lang">
-      <a href="../it/index.html" data-lang="it">IT - Italiano</a>
-      <a href="../en/index.html" data-lang="en">EN - English</a>
+        <a href="../it/index.html" data-lang="it">IT - Italiano</a>
+        <a href="../en/index.html" data-lang="en">EN - English</a>
     </div>
     <a href="contact.html" class="m-cta">Start -></a>
-  </div>
+</div>
 
-  <section class="hero">
+<section class="hero">
     <div class="hero-inner">
-      <div class="hero-tag fade">Custom data automation - Switzerland</div>
-      <h1 class="fade">Repetitive work?<br />We handle<br /><em>all of it.</em></h1>
-      <p class="hero-sub fade">F32Lab provides data automation tools for individuals and businesses. From file downloads to change monitoring - we do the work, you get the results.</p>
-      <div class="hero-actions fade">
-        <a href="contact.html" class="btn-accent">Request a service</a>
-        <a href="#services" class="btn-ghost">Our services</a>
-      </div>
-      <div class="stats fade">
-        <div class="stat"><span class="stat-val">2</span><span class="stat-label">services available</span></div>
-        <div class="stat"><span class="stat-val">48h</span><span class="stat-label">response guaranteed</span></div>
-        <div class="stat"><span class="stat-val">free</span><span class="stat-label">initial evaluation</span></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="ticker-wrap">
-    <div class="ticker">
-      <span class="tick-item green">Download file automatico</span>
-      <span class="tick-item yellow">Change monitoring</span>
-      <span class="tick-item green">CSV / Excel / JSON</span>
-      <span class="tick-item yellow">Real-time alerts</span>
-      <span class="tick-item green">Login-protected sites</span>
-      <span class="tick-item yellow">New files published</span>
-      <span class="tick-item green">Structured data</span>
-      <span class="tick-item yellow">Custom alerts</span>
-      <span class="tick-item green">Download file automatico</span>
-      <span class="tick-item yellow">Change monitoring</span>
-      <span class="tick-item green">CSV / Excel / JSON</span>
-      <span class="tick-item yellow">Real-time alerts</span>
-      <span class="tick-item green">Login-protected sites</span>
-      <span class="tick-item yellow">New files published</span>
-      <span class="tick-item green">Structured data</span>
-      <span class="tick-item yellow">Custom alerts</span>
-    </div>
-  </div>
-
-  <section class="section" id="services">
-    <div class="container">
-      <div class="eyebrow">Our services</div>
-      <h2>Two tools,<br /><em>one thread.</em></h2>
-      <p class="sec-sub">Each service removes one manual task from your day. Simple, recurring, automatic.</p>
-      <div class="service-cards">
-        <a href="datafilo.html" class="service-card datafilo">
-          <div class="card-tag green">DataFilo</div>
-          <div class="card-title">Download data<br />and files automatically.</div>
-          <p class="card-desc">Need to download files, tables or data from a website - even one protected by login? DataFilo does it for you and delivers everything in Excel, CSV or JSON format.</p>
-          <div class="card-features">
-            <div class="cf green">Download from public and login-protected sites</div>
-            <div class="cf green">Export in CSV, Excel, JSON, PDF</div>
-            <div class="cf green">Scheduled email delivery</div>
-            <div class="cf green">Maintenance included</div>
-          </div>
-          <span class="card-link green">Learn about DataFilo -></span>
-        </a>
-        <a href="alertfilo.html" class="service-card alertfilo">
-          <div class="card-tag yellow">AlertFilo</div>
-          <div class="card-title">Get notified about<br />any change.</div>
-          <p class="card-desc">Want to know when a site publishes new files, updates data or changes a price? AlertFilo monitors anything and notifies you by email the exact moment something happens.</p>
-          <div class="card-features">
-            <div class="cf yellow">New files or documents published</div>
-            <div class="cf yellow">Data or table updates</div>
-            <div class="cf yellow">Price or availability changes</div>
-            <div class="cf yellow">Instant email notification</div>
-          </div>
-          <span class="card-link yellow">Learn about AlertFilo -></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="container">
-      <div class="eyebrow">How it works</div>
-      <h2>Simple from start<br /><em>to finish.</em></h2>
-      <p class="sec-sub">No technical setup on your end. Tell us what you need, we handle everything else.</p>
-      <div class="steps">
-        <div class="step"><div class="step-num">01</div><h3>Send a request</h3><p>Fill in the form with the service you're interested in. Free and no commitment.</p></div>
-        <div class="step"><div class="step-num">02</div><h3>Receive a quote</h3><p>We analyse your request within 48 hours and send you a clear quote with costs and timeline.</p></div>
-        <div class="step"><div class="step-num">03</div><h3>Activation</h3><p>After your confirmation, we set up the service. Usually live within a few days.</p></div>
-        <div class="step"><div class="step-num">04</div><h3>You receive, we maintain</h3><p>The service runs automatically. If something breaks, we fix it - included in the monthly fee.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="cta-band">
-        <div>
-          <h2>Ready to eliminate<br /><em>manual work?</em></h2>
-          <p>The evaluation is free. No commitment until you accept the quote.</p>
+        <div class="hero-tag fade">Custom data automation - Switzerland</div>
+        <h1 class="fade"><em>Repetitive work?<br/>We handle<br/>all of it.</em></h1>
+        <p class="hero-sub fade">F32Lab provides data automation tools for individuals and businesses. From file
+            downloads to change monitoring - we do the work, you get the results.</p>
+        <div class="hero-actions fade">
+            <a href="contact.html" class="btn-accent">Request a service</a>
+            <a href="#services" class="btn-ghost">Our services</a>
         </div>
-        <a href="contact.html" class="btn-accent">Contact us -></a>
-      </div>
+        <div class="stats fade">
+            <div class="stat"><span class="stat-val">2</span><span class="stat-label">services available</span></div>
+            <div class="stat"><span class="stat-val">48h</span><span class="stat-label">response guaranteed</span></div>
+            <div class="stat"><span class="stat-val">free</span><span class="stat-label">initial evaluation</span></div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <footer class="site-footer">
+<div class="ticker-wrap">
+    <div class="ticker">
+        <span class="tick-item green">Files downloaded automatically</span>
+        <span class="tick-item yellow">Change monitoring</span>
+        <span class="tick-item green">CSV / Excel / JSON</span>
+        <span class="tick-item yellow">Real-time alerts</span>
+        <span class="tick-item green">Login-protected sites</span>
+        <span class="tick-item yellow">New files published</span>
+        <span class="tick-item green">Structured data</span>
+        <span class="tick-item yellow">Custom alerts</span>
+        <span class="tick-item green">Files downloaded automatically</span>
+        <span class="tick-item yellow">Change monitoring</span>
+        <span class="tick-item green">CSV / Excel / JSON</span>
+        <span class="tick-item yellow">Real-time alerts</span>
+        <span class="tick-item green">Login-protected sites</span>
+        <span class="tick-item yellow">New files published</span>
+        <span class="tick-item green">Structured data</span>
+        <span class="tick-item yellow">Custom alerts</span>
+    </div>
+</div>
+
+<section class="section" id="services">
+    <div class="container">
+        <div class="eyebrow">Our services</div>
+        <h2>Two tools,<br/><em>one thread.</em></h2>
+        <p class="sec-sub">Each service removes one manual task from your day. Simple, recurring, automatic.</p>
+        <div class="service-cards">
+            <a href="datathread.html" class="service-card datafilo">
+                <div class="card-tag green">DataFilo</div>
+                <div class="card-title">Download data<br/>and files automatically.</div>
+                <p class="card-desc">Need to download files, tables or data from a website - even one protected by
+                    login? DataFilo does it for you and delivers everything in Excel, CSV or JSON format.</p>
+                <div class="card-features">
+                    <div class="cf green">Download from public and login-protected sites</div>
+                    <div class="cf green">Export in CSV, Excel, JSON, PDF</div>
+                    <div class="cf green">Scheduled email delivery</div>
+                    <div class="cf green">Maintenance included</div>
+                </div>
+                <span class="card-link green">Learn about DataFilo -></span>
+            </a>
+            <a href="alertthread.html" class="service-card alertfilo">
+                <div class="card-tag yellow">AlertFilo</div>
+                <div class="card-title">Get notified about<br/>any change.</div>
+                <p class="card-desc">Want to know when a site publishes new files, updates data or changes a price?
+                    AlertFilo monitors anything and notifies you by email the exact moment something happens.</p>
+                <div class="card-features">
+                    <div class="cf yellow">New files or documents published</div>
+                    <div class="cf yellow">Data or table updates</div>
+                    <div class="cf yellow">Price or availability changes</div>
+                    <div class="cf yellow">Instant email notification</div>
+                </div>
+                <span class="card-link yellow">Learn about AlertFilo -></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section alt">
+    <div class="container">
+        <div class="eyebrow">How it works</div>
+        <h2>Simple from start<br/><em>to finish.</em></h2>
+        <p class="sec-sub">No technical setup on your end. Tell us what you need, we handle everything else.</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">01</div>
+                <h3>Send a request</h3>
+                <p>Fill in the form with the service you're interested in. Free and no commitment.</p></div>
+            <div class="step">
+                <div class="step-num">02</div>
+                <h3>Receive a quote</h3>
+                <p>We analyse your request within 48 hours and send you a clear quote with costs and timeline.</p></div>
+            <div class="step">
+                <div class="step-num">03</div>
+                <h3>Activation</h3>
+                <p>After your confirmation, we set up the service. Usually live within a few days.</p></div>
+            <div class="step">
+                <div class="step-num">04</div>
+                <h3>You receive, we maintain</h3>
+                <p>The service runs automatically. If something breaks, we fix it - included in the monthly fee.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="cta-band">
+            <div>
+                <h2>Ready to eliminate<br/><em>manual work?</em></h2>
+                <p>The evaluation is free. No commitment until you accept the quote.</p>
+            </div>
+            <a href="contact.html" class="btn-accent">Contact us -></a>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
     <div class="footer-inner">
-      <a href="../index.html" class="logo">
-        <span class="logo-mark">F32</span>
-        F32Lab
-      </a>
-      <div class="footer-links">
-        <a href="datafilo.html">DataFilo</a>
-        <a href="alertfilo.html">AlertFilo</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <p>2025 F32Lab - Switzerland</p>
+        <a href="../index.html" class="logo">
+            <span class="logo-mark">F32</span>
+            F32Lab
+        </a>
+        <div class="footer-links">
+            <a href="datathread.html">DataFilo</a>
+            <a href="alertthread.html">AlertFilo</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p>2025 F32Lab - Switzerland</p>
     </div>
-  </footer>
+</footer>
 
-  <script src="../js/main.js"></script>
+<script src="../js/main.js"></script>
 
 </body>
 </html>

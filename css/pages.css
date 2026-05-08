@@ -107,6 +107,7 @@
 }
 
 .service-pill.green  { color: var(--accent); background: rgba(168,216,120,0.08); border: 1px solid rgba(168,216,120,0.2); }
+.service-pill.blue  { color: var(--datathread); background: rgba(96,151,240,0.08); border: 1px solid rgba(96,151,240,0.2); }
 .service-pill.yellow { color: var(--alert);  background: rgba(240,192,96,0.08);  border: 1px solid rgba(240,192,96,0.2); }
 
 .service-pill::before {
@@ -211,6 +212,7 @@
 
 .card-tag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .card-tag.green  { color: var(--accent); }
+.card-tag.blue  { color: var(--datathread); }
 .card-tag.yellow { color: var(--alert); }
 
 .card-title {
@@ -247,6 +249,7 @@
 
 .cf::before        { content: '-'; flex-shrink: 0; }
 .cf.green::before  { color: var(--accent); }
+.cf.blue::before  { color: var(--datathread); }
 .cf.yellow::before { color: var(--alert); }
 
 .card-link {
@@ -259,6 +262,7 @@
 }
 
 .card-link.green  { color: var(--accent); }
+.card-link.blue  { color: var(--datathread); }
 .card-link.yellow { color: var(--alert); }
 .service-card:hover .card-link { gap: 0.8rem; }
 

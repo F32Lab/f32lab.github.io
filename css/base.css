@@ -14,10 +14,12 @@
   --accent-dim: #7aad50;
   --alert:      #f0c060;
   --alert-dim:  #c8982a;
+  --datathread:	#75bafa;
+  --datathread-dim:	   #0384fc;
   --cream:      #f0e8d0;
   --muted:      #7a9068;
   --text:       #dde8cc;
-  --font-sans:  'Syne', sans-serif;
+  --font-sans:  'Inter', sans-serif;
   --font-mono:  'DM Mono', monospace;
   --font-serif: 'Lora', serif;
 }
@@ -146,6 +148,24 @@ h3 {
 
 .btn-ghost:hover { color: var(--text); border-color: var(--muted); }
 
+.btn-datathread {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--bg);
+  background: var(--datathread);
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.btn-datathread:hover {
+  background: var(--datathread-dim);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(96,151,240,0.1);
+}
+
 .btn-alert {
   font-family: var(--font-mono);
   font-size: 0.88rem;
@@ -235,6 +255,7 @@ h3 {
 
 .uc:hover { background: var(--surface-2); transform: translateY(-2px); }
 .uc.green:hover { border-color: var(--accent); }
+.uc.blue:hover { border-color: var(--datathread); }
 .uc.yellow:hover { border-color: var(--alert); }
 
 .uc-icon {
@@ -247,6 +268,7 @@ h3 {
 }
 
 .uc-icon.green { color: var(--accent); background: rgba(168,216,120,0.1); border: 1px solid rgba(168,216,120,0.2); }
+.uc-icon.blue { color: var(--datathread); background: rgba(96,151,240,0.1); border: 1px solid rgba(96, 151, 240,0.2); }
 .uc-icon.yellow { color: var(--alert); background: rgba(240,192,96,0.08); border: 1px solid rgba(240,192,96,0.2); }
 
 .uc h3 { font-size: 0.95rem; }
@@ -283,6 +305,7 @@ h3 {
 
 .tick-item::before { content: '\25C6'; font-size: 0.4rem; }
 .tick-item.green::before  { color: var(--accent); }
+.tick-item.blue::before  { color: var(--datathread); }
 .tick-item.yellow::before { color: var(--alert); }
 
 /* ── Fade-in animation ── */
