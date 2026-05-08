@@ -1,182 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AlertThread - F32Lab</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Lora:ital,wght@1,400;1,500&display=swap"
-          rel="stylesheet"/>
-    <link rel="stylesheet" href="../css/base.css"/>
-    <link rel="stylesheet" href="../css/nav.css"/>
-    <link rel="stylesheet" href="../css/pages.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlertThread — F32Lab</title>
+  <link rel="stylesheet" href="../css/base.css"/>
+  <link rel="stylesheet" href="../css/nav.css"/>
+  <link rel="stylesheet" href="../css/pages.css"/>
 </head>
-<body>
+<body data-theme="alert">
 
 <nav class="site-nav">
-    <a href="../index.html" class="logo">
-        <span class="logo-mark">F32</span>
-        F32Lab
-    </a>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="datathread.html">DataThread</a></li>
-        <li><a href="alertthread.html">AlertThread</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <a href="../index.html" class="logo">
+    <span class="logo-mark">F32</span>
+    <span class="logo-name">F32Lab</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="datathread.html">DataThread</a></li>
+    <li><a href="alertthread.html">AlertThread</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
     <div class="lang-switch">
-        <a href="../it/alertthread.html" data-lang="it">IT</a>
-        <span class="lang-sep">/</span>
-        <a href="../en/#" data-lang="en">EN</a>
+      <a href="../it/alertthread.html" data-lang="it">IT</a>
+      <a href="../en/alertthread.html" data-lang="en">EN</a>
     </div>
     <a href="contact.html" class="nav-cta">Start -></a>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
+  </div>
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="datathread.html">DataThread</a>
-    <a href="alertthread.html">AlertThread</a>
-    <a href="contact.html">Contact</a>
-    <div class="mobile-lang">
-        <a href="../it/alertthread.html" data-lang="it">IT - Italiano</a>
-        <a href="../en/alertthread.html" data-lang="en">EN - English</a>
-    </div>
-    <a href="contact.html" class="m-cta">Start -></a>
+  <a href="index.html">Home</a>
+  <a href="datathread.html">DataThread</a>
+  <a href="alertthread.html">AlertThread</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-lang">
+    <a href="../it/alertthread.html" data-lang="it">IT — Italiano</a>
+    <a href="../en/alertthread.html" data-lang="en">EN — English</a>
+  </div>
+  <a href="contact.html" class="m-cta">Start -></a>
 </div>
 
-<section class="hero-split alert-theme">
-    <div class="hero-inner">
-        <div>
-            <div class="service-pill yellow fade">AlertThread - Change monitoring</div>
-            <h1 class="fade" style="color:var(--cream);">Be the first to know<br/>when something<br/><em
-                    style="color:var(--alert);">changes.</em></h1>
-            <p class="hero-sub fade">Choose what to monitor - a site that publishes files, a page that updates data, a
-                price that changes. AlertThread checks for you and notifies you by email the exact moment it happens.</p>
-            <div class="hero-actions fade">
-                <a href="contact.html" class="btn-alert">Request AlertThread</a>
-                <a href="#how-it-works" class="btn-ghost">How it works</a>
-            </div>
-        </div>
-        <div class="notif-stack fade">
-            <div class="notif">
-                <div class="notif-dot"></div>
-                <div>
-                    <div class="notif-title">AlertThread - Change detected</div>
-                    <div class="notif-text">comune-lugano.ch - <strong>Verbale CdC marzo 2025.pdf</strong></div>
-                    <div class="notif-time">today, 11:07</div>
-                </div>
-            </div>
-            <div class="notif">
-                <div class="notif-dot"></div>
-                <div>
-                    <div class="notif-title">AlertThread - Change detected</div>
-                    <div class="notif-text">tabella-orari.ch - <strong>3 changes detected</strong></div>
-                    <div class="notif-time">today, 09:25</div>
-                </div>
-            </div>
-            <div class="notif dimmed">
-                <div class="notif-dot muted"></div>
-                <div>
-                    <div class="notif-title muted">AlertThread - No changes</div>
-                    <div class="notif-text">portale-gara.ch - no new publications</div>
-                    <div class="notif-time">today, 06:22</div>
-                </div>
-            </div>
-            <div class="notif dimmed">
-                <div class="notif-dot muted"></div>
-                <div>
-                    <div class="notif-title muted">AlertThread - No changes</div>
-                    <div class="notif-text">pinco-pallino.ch - no new publications</div>
-                    <div class="notif-time">today, 06:00</div>
-                </div>
-            </div>
-        </div>
+<section class="hero-split">
+  <div class="hero-glow top-right"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="service-pill fade-up">AlertThread — Change monitoring</div>
+      <h1 class="fade-up">Be the first to know<br/>when something<br/><em>changes.</em></h1>
+      <p class="hero-sub fade-up">Choose what to monitor. AlertThread checks continuously and sends you a Telegram message the exact moment something new appears or something you care about changes.</p>
+      <div style="display:flex;align-items:flex-start;gap:0.6rem;margin:-1rem 0 2rem;padding:0.9rem 1.2rem;border:1px solid var(--page-border2);background:var(--page-surface);font-size:0.82rem;color:var(--muted);line-height:1.6;" class="fade-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="var(--page-accent)" style="flex-shrink:0;margin-top:1px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.93c-.12.57-.45.71-.91.44l-2.52-1.86-1.22 1.17c-.13.13-.25.25-.51.25l.18-2.57 4.65-4.2c.2-.18-.04-.28-.31-.1L7.36 14.4l-2.48-.77c-.54-.17-.55-.54.11-.8l9.68-3.73c.45-.17.84.11.97.7z"/></svg>
+        <span>Notifications arrive via <strong>Telegram</strong> — free, instant, available on all devices. No extra app needed if you already use it.</span>
+      </div>
+      <div class="hero-actions fade-up">
+        <a href="contact.html" class="btn-primary">request AlertThread</a>
+        <a href="#how-it-works" class="btn-outline">how it works</a>
+      </div>
     </div>
+    <div class="notif-stack fade-up">
+    <div class="notif ">
+      <div class="notif-dot "></div>
+      <div>
+        <div class="notif-title ">🔔 AlertThread</div>
+        <div class="notif-text">comune-lugano.ch — published <strong>Verbale CdC marzo 2026.pdf</strong></div>
+        <div class="notif-time">today, 09:14</div>
+      </div>
+    </div>
+    <div class="notif ">
+      <div class="notif-dot "></div>
+      <div>
+        <div class="notif-title ">🔔 AlertThread</div>
+        <div class="notif-text">timetable-site.ch — <strong>3 changes detected</strong> on line 4</div>
+        <div class="notif-time">today, 07:32</div>
+      </div>
+    </div>
+    <div class="notif dimmed">
+      <div class="notif-dot muted"></div>
+      <div>
+        <div class="notif-title muted">🔕 AlertThread</div>
+        <div class="notif-text">tender-portal.ch — no new publications</div>
+        <div class="notif-time">today, 06:00</div>
+      </div>
+    </div>
+    <div class="notif dimmed">
+      <div class="notif-dot muted"></div>
+      <div>
+        <div class="notif-title muted">🔕 AlertThread</div>
+        <div class="notif-text">shop-example.ch — price unchanged: CHF 349.00</div>
+        <div class="notif-time">today, 06:00</div>
+      </div>
+    </div>
+    </div>
+  </div>
 </section>
 
 <section class="section alt" id="use-cases">
-    <div class="container">
-        <div class="eyebrow" style="color:var(--alert);">What you can monitor</div>
-        <h2>Never miss<br/><em style="color:var(--alert);">an important change.</em></h2>
-        <p class="sec-sub">Configure once - AlertThread monitors continuously and alerts you only when something is new or
-            changed.</p>
-        <div class="use-cases">
-            <div class="uc yellow"><span class="uc-icon yellow">files</span>
-                <h3>New files published</h3>
-                <p>An institution or portal publishes documents periodically? We notify you the moment something new
-                    appears.</p></div>
-            <div class="uc yellow"><span class="uc-icon yellow">data</span>
-                <h3>Data or table updates</h3>
-                <p>A page updates statistics, schedules or availability? Receive a notification at the exact moment.</p>
-            </div>
-            <div class="uc yellow"><span class="uc-icon yellow">prices</span>
-                <h3>Price changes</h3>
-                <p>Set a threshold and we'll notify you when a product drops below that price, on any website.</p></div>
-            <div class="uc yellow"><span class="uc-icon yellow">custom</span>
-                <h3>Any other change</h3>
-                <p>If a page changes in any way and you want to know, we can probably monitor it. Write to us.</p></div>
-        </div>
+  <div class="container">
+    <div class="eyebrow">What you can monitor</div>
+    <h2>Never miss<br/><em>an important change.</em></h2>
+    <p class="sec-sub">Configure once, AlertThread works always.</p>
+    <div class="use-cases">
+    <div class="uc">
+      <div class="uc-num">01</div>
+      <h3>New files published</h3>
+      <p>An institution, portal or site publishes documents periodically? We notify you on Telegram the moment something new appears.</p>
     </div>
+    <div class="uc">
+      <div class="uc-num">02</div>
+      <h3>Data or table updates</h3>
+      <p>Statistics, schedules, availability — Telegram notification the exact moment they change.</p>
+    </div>
+    <div class="uc">
+      <div class="uc-num">03</div>
+      <h3>Price changes</h3>
+      <p>Set a threshold and we'll notify you when a product drops below that price, on any website.</p>
+    </div>
+    <div class="uc">
+      <div class="uc-num">04</div>
+      <h3>Any other change</h3>
+      <p>If a page changes in any way and you want to know, we can probably monitor it. Write to us.</p>
+    </div>
+    </div>
+  </div>
 </section>
 
 <section class="section" id="how-it-works">
-    <div class="container">
-        <div class="eyebrow" style="color:var(--alert);">How it works</div>
-        <h2>Configure once,<br/><em style="color:var(--alert);">AlertThread works always.</em></h2>
-        <p class="sec-sub">No app to install. Just an email when it really matters.</p>
-        <div class="steps">
-            <div class="step">
-                <div class="step-num" style="color:var(--alert);">01</div>
-                <h3>Tell us what to monitor</h3>
-                <p>Send us the site, page or element to check and what you want to know when it changes.</p></div>
-            <div class="step">
-                <div class="step-num" style="color:var(--alert);">02</div>
-                <h3>We set up the monitor</h3>
-                <p>We activate automatic monitoring within a few days of quote acceptance.</p></div>
-            <div class="step">
-                <div class="step-num" style="color:var(--alert);">03</div>
-                <h3>The notification arrives</h3>
-                <p>When something changes, you receive an email with all the details - what changed, when, where.</p>
-            </div>
-            <div class="step">
-                <div class="step-num" style="color:var(--alert);">04</div>
-                <h3>Add or modify</h3>
-                <p>Want to add more items to monitor or change settings? Just write to us.</p></div>
-        </div>
+  <div class="container">
+    <div class="eyebrow">How it works</div>
+    <h2>Configure once,<br/><em>AlertThread works always.</em></h2>
+    <p class="sec-sub">No extra app beyond Telegram. Instant notifications, always.</p>
+    <div class="steps">
+  <div class="step"><div class="step-num" style="color:var(--page-accent);">01</div><h3>Tell us what to monitor</h3><p>URL, page or element to check, and what you care about when it changes.</p></div>
+  <div class="step"><div class="step-num" style="color:var(--page-accent);">02</div><h3>We set up the monitor</h3><p>We activate automatic monitoring and connect it to your Telegram within a few days.</p></div>
+  <div class="step"><div class="step-num" style="color:var(--page-accent);">03</div><h3>The notification arrives</h3><p>Telegram message with all the details: what changed, when, where — straight to your phone.</p></div>
+  <div class="step"><div class="step-num" style="color:var(--page-accent);">04</div><h3>Add or modify</h3><p>Want to add new items or change thresholds? Just write to us.</p></div>
     </div>
+  </div>
 </section>
 
 <section class="section alt">
-    <div class="container">
-        <div class="cta-band">
-            <div>
-                <h2>What would you never<br/><em style="color:var(--alert);">want to miss again?</em></h2>
-                <p>Write to us - free evaluation and AlertThread configured for you within days.</p>
-            </div>
-            <a href="contact.html" class="btn-alert">Request AlertThread -></a>
-        </div>
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>What would you never<br/><em>want to miss again?</em></h2>
+        <p>Free evaluation — Telegram alerts live within days.</p>
+      </div>
+      <a href="contact.html" class="btn-primary">request AlertThread -></a>
     </div>
+  </div>
 </section>
 
 <footer class="site-footer">
-    <div class="footer-inner">
-        <a href="../index.html" class="logo">
-            <span class="logo-mark">F32</span>
-            F32Lab
-        </a>
-        <div class="footer-links">
-            <a href="datathread.html">DataThread</a>
-            <a href="alertthread.html">AlertThread</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <p>2025 F32Lab - Switzerland</p>
+  <div class="footer-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">F32</span>
+      <span class="logo-name">F32Lab</span>
+    </a>
+    <div class="footer-links">
+      <a href="datathread.html">DataThread</a>
+      <a href="alertthread.html">AlertThread</a>
+      <a href="contact.html">Contact</a>
     </div>
+    <p>F32Lab &copy; 2026 &mdash; Switzerland</p>
+  </div>
 </footer>
-
 <script src="../js/main.js"></script>
-
 </body>
 </html>

@@ -1,161 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>DataThread - F32Lab</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Lora:ital,wght@1,400;1,500&display=swap"
-          rel="stylesheet"/>
-    <link rel="stylesheet" href="../css/base.css"/>
-    <link rel="stylesheet" href="../css/nav.css"/>
-    <link rel="stylesheet" href="../css/pages.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DataThread — F32Lab</title>
+  <link rel="stylesheet" href="../css/base.css"/>
+  <link rel="stylesheet" href="../css/nav.css"/>
+  <link rel="stylesheet" href="../css/pages.css"/>
 </head>
-<body>
+<body data-theme="data">
 
 <nav class="site-nav">
-    <a href="../index.html" class="logo">
-        <span class="logo-mark">F32</span>
-        F32Lab
-    </a>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="datathread.html">DataThread</a></li>
-        <li><a href="alertthread.html">AlertFilo</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <a href="../index.html" class="logo">
+    <span class="logo-mark">F32</span>
+    <span class="logo-name">F32Lab</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="datathread.html">DataThread</a></li>
+    <li><a href="alertthread.html">AlertThread</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
     <div class="lang-switch">
-        <a href="../it/datathread.html" data-lang="it">IT</a>
-        <span class="lang-sep">/</span>
-        <a href="../en/#" data-lang="en">EN</a>
+      <a href="../it/datathread.html" data-lang="it">IT</a>
+      <a href="../en/datathread.html" data-lang="en">EN</a>
     </div>
     <a href="contact.html" class="nav-cta">Start -></a>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
+  </div>
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="datathread.html">DataThread</a>
-    <a href="alertthread.html">AlertFilo</a>
-    <a href="contact.html">Contact</a>
-    <div class="mobile-lang">
-        <a href="../it/datathread.html" data-lang="it">IT - Italiano</a>
-        <a href="../en/datathread.html" data-lang="en">EN - English</a>
-    </div>
-    <a href="contact.html" class="m-cta">Start -></a>
+  <a href="index.html">Home</a>
+  <a href="datathread.html">DataThread</a>
+  <a href="alertthread.html">AlertThread</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-lang">
+    <a href="../it/datathread.html" data-lang="it">IT — Italiano</a>
+    <a href="../en/datathread.html" data-lang="en">EN — English</a>
+  </div>
+  <a href="contact.html" class="m-cta">Start -></a>
 </div>
 
 <section class="hero-split">
-    <div class="hero-inner">
-        <div>
-            <div class="service-pill green fade">DataThread - Data downloads</div>
-            <h1 class="fade">The files you need,<br/><em>already waiting.</em></h1>
-            <p class="hero-sub fade">Tell us which site you want data from. We configure it once and deliver
-                automatically - in the format you prefer, at the frequency you choose.</p>
-            <div class="hero-actions fade">
-                <a href="contact.html" class="btn-accent">Request DataThread</a>
-                <a href="#use-cases" class="btn-ghost">Use cases</a>
-            </div>
-        </div>
-        <div class="terminal fade">
-            <div class="terminal-bar">
-                <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
-                <span class="terminal-title">DataThread-job.json</span>
-            </div>
-            <div class="terminal-body">
-                <span class="t-c">// client configuration</span><br/>
-                {<br/>
-                &nbsp;&nbsp;<span class="t-k">"site"</span>: <span class="t-v">"supplier-portal.ch"</span>,<br/>
-                &nbsp;&nbsp;<span class="t-k">"login"</span>: <span class="t-v">true</span>,<br/>
-                &nbsp;&nbsp;<span class="t-k">"target"</span>: <span class="t-v">"invoices/*.pdf"</span>,<br/>
-                &nbsp;&nbsp;<span class="t-k">"format"</span>: <span class="t-v">"PDF + Excel summary"</span>,<br/>
-                &nbsp;&nbsp;<span class="t-k">"schedule"</span>: <span class="t-v">"every monday 08:00"</span>,<br/>
-                &nbsp;&nbsp;<span class="t-k">"delivery"</span>: <span class="t-v">"email attachment"</span><br/>
-                }<br/><br/>
-                <span class="t-c">// active - next run mon 08:00</span>
-            </div>
-        </div>
+  <div class="hero-glow top-right"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="service-pill fade-up">DataThread — Data downloads</div>
+      <h1 class="fade-up">The data you need,<br/><em>every day.</em></h1>
+      <p class="hero-sub fade-up">Tell us the site, the data and the frequency. We build a custom scraper and deliver it to your inbox in the format you use — hands-free.</p>
+      <div class="hero-actions fade-up">
+        <a href="contact.html" class="btn-primary">request DataThread</a>
+        <a href="#examples" class="btn-outline">practical examples</a>
+      </div>
     </div>
+    <div class="inbox-mockup fade-up">
+  <div class="inbox-bar">
+    <span class="inbox-bar-dot r"></span>
+    <span class="inbox-bar-dot y"></span>
+    <span class="inbox-bar-dot g"></span>
+    <span class="inbox-bar-title">Inbox — DataThread</span>
+  </div>
+  <div class="inbox-list">
+    <div class="inbox-item">
+      <div class="inbox-unread"></div>
+      <div class="inbox-body">
+        <div class="inbox-from">DataThread</div>
+        <div class="inbox-subject">[DataThread] February 2026 Invoices</div>
+        <div class="inbox-preview">3 attachments ready — invoice_01.pdf, 02, 03</div>
+      </div>
+      <div class="inbox-meta">
+        <span class="inbox-time">08:00</span>
+        <span class="inbox-attach pdf">.pdf</span>
+      </div>
+    </div>
+    <div class="inbox-item">
+      <div class="inbox-unread"></div>
+      <div class="inbox-body">
+        <div class="inbox-from">DataThread</div>
+        <div class="inbox-subject">[DataThread] Product prices updated</div>
+        <div class="inbox-preview">48 products — changes: -12%, +0%, -5%...</div>
+      </div>
+      <div class="inbox-meta">
+        <span class="inbox-time">07:00</span>
+        <span class="inbox-attach xlsx">.xlsx</span>
+      </div>
+    </div>
+    <div class="inbox-item">
+      <div class="inbox-unread read"></div>
+      <div class="inbox-body">
+        <div class="inbox-from read">DataThread</div>
+        <div class="inbox-subject read">[DataThread] Property listings Lugano</div>
+        <div class="inbox-preview">7 new listings match your criteria</div>
+      </div>
+      <div class="inbox-meta">
+        <span class="inbox-time">yesterday</span>
+        <span class="inbox-attach csv">.csv</span>
+      </div>
+    </div>
+    <div class="inbox-item">
+      <div class="inbox-unread read"></div>
+      <div class="inbox-body">
+        <div class="inbox-from read">DataThread</div>
+        <div class="inbox-subject read">[DataThread] Python dev job listings</div>
+        <div class="inbox-preview">4 new positions found today</div>
+      </div>
+      <div class="inbox-meta">
+        <span class="inbox-time">yesterday</span>
+        <span class="inbox-attach xlsx">.xlsx</span>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
 </section>
 
-<section class="section alt" id="use-cases">
-    <div class="container">
-        <div class="eyebrow">Use cases</div>
-        <h2>What you can<br/><em>download with DataThread</em></h2>
-        <p class="sec-sub">If it's on the web, we can probably automate it.</p>
-        <div class="use-cases">
-            <div class="uc green"><span class="uc-icon green">invoices</span>
-                <h3>Invoices from supplier portals</h3>
-                <p>Automatically log in to your supplier portal and download PDF invoices every month, hands-free.</p>
-            </div>
-            <div class="uc green"><span class="uc-icon green">tables</span>
-                <h3>Tables from public websites</h3>
-                <p>Schedules, statistics, official data from institutional sites - we extract and deliver in Excel or
-                    CSV.</p></div>
-            <div class="uc green"><span class="uc-icon green">documents</span>
-                <h3>Documents from private portals</h3>
-                <p>Contracts, certificates, reports - any downloadable document from a login-protected area.</p></div>
-            <div class="uc green"><span class="uc-icon green">data</span>
-                <h3>Bulk structured data</h3>
-                <p>Product lists, categories or any structured information - exported in JSON or CSV.</p></div>
-            <div class="uc green"><span class="uc-icon green">reports</span>
-                <h3>Periodic reports</h3>
-                <p>We build an automated report aggregating data from one or more sources and send it weekly.</p></div>
-            <div class="uc green"><span class="uc-icon green">custom</span>
-                <h3>Have a specific case?</h3>
-                <p>Describe what you need - we evaluate for free whether it's feasible.</p></div>
-        </div>
+<section class="section alt" id="examples">
+  <div class="container">
+    <div class="eyebrow">Practical examples</div>
+    <h2>What DataThread<br/><em>can download for you</em></h2>
+    <p class="sec-sub">If the data is on the web and there's no anti-bot system or CAPTCHA blocking it, we can probably automate it.</p>
+    <div class="example-grid">
+  <div class="example-card">
+    <span class="example-tag">e-commerce</span>
+    <h3>Product prices</h3>
+    <p>Monitor prices of specific products on one or more sites. Receive an updated Excel file every morning with current price and change.</p>
+    <div class="example-sample"><span>//</span> output:<br/>product, price, delta<br/>Miele Robot, CHF 349.00, -12%<br/>Dyson V15, CHF 699.00, +0%</div>
+  </div>
+  <div class="example-card">
+    <span class="example-tag">portal</span>
+    <h3>Invoices & documents</h3>
+    <p>Logs into your supplier portal with your credentials and automatically downloads monthly PDF invoices, renamed and organised.</p>
+    <div class="example-sample"><span>//</span> output:<br/>invoice_2026_01.pdf<br/>invoice_2026_02.pdf<br/>invoice_2026_03.pdf</div>
+  </div>
+  <div class="example-card">
+    <span class="example-tag">real-estate</span>
+    <h3>Property listings</h3>
+    <p>Collects all new listings matching your criteria (area, price, sqm) from one or more portals and sends them in CSV.</p>
+    <div class="example-sample"><span>//</span> output:<br/>address, price, sqm, link<br/>Lugano Centre, 450k, 85, ...</div>
+  </div>
+  <div class="example-card">
+    <span class="example-tag">jobs</span>
+    <h3>Job listings</h3>
+    <p>Extracts offers matching your profile from LinkedIn, Indeed or other portals and sends them daily in Excel.</p>
+    <div class="example-sample"><span>//</span> output:<br/>title, company, location, date<br/>Python Dev, Acme SA, Lugano...</div>
+  </div>
+  <div class="example-card">
+    <span class="example-tag">public</span>
+    <h3>Public data</h3>
+    <p>Downloads tables from institutional sites and converts them to CSV or Excel for research and analysis.</p>
+    <div class="example-sample"><span>//</span> output:<br/>date, value, source<br/>2026-01, 1240, registry...</div>
+  </div>
+  <div class="example-card">
+    <span class="example-tag">stock</span>
+    <h3>Product availability</h3>
+    <p>Checks if a product is back in stock on a site and notifies you with updated data.</p>
+    <div class="example-sample"><span>//</span> output:<br/>product, available, url<br/>CPU i9, YES, shop.ch/...</div>
+  </div>
     </div>
+    <div style="margin-top:2rem;padding:1.5rem 2rem;border:1px solid var(--page-border2);background:var(--page-surface);">
+      <h3 style="font-size:0.9rem;margin-bottom:0.4rem;color:var(--page-accent);">&#9888; One important thing</h3>
+      <p style="font-size:0.82rem;color:var(--muted);line-height:1.7;">DataThread works on sites that don't actively block bots. If a site uses CAPTCHA, Cloudflare Bot Fight or aggressive anti-scraping systems, we may not be able to collect it — we'll tell you upfront, at no cost.</p>
+    </div>
+  </div>
 </section>
 
 <section class="section">
-    <div class="container">
-        <div class="eyebrow">Delivery formats</div>
-        <h2>Receive data<br/><em>in the format you use.</em></h2>
-        <p class="sec-sub">We configure the output format based on your workflow.</p>
-        <div class="format-grid">
-            <div class="format-card"><span class="format-ext">.xlsx</span>
-                <p>Excel, ready to open and use</p></div>
-            <div class="format-card"><span class="format-ext">.csv</span>
-                <p>Universal, for any tool</p></div>
-            <div class="format-card"><span class="format-ext">.json</span>
-                <p>For developers and integrations</p></div>
-            <div class="format-card"><span class="format-ext">.pdf</span>
-                <p>Original files downloaded from the site</p></div>
-        </div>
+  <div class="container">
+    <div class="eyebrow">Delivery formats</div>
+    <p class="sec-sub" style="margin-bottom:2rem;">Receive data in the format you already use, no conversion needed.</p>
+    <div class="format-chips">
+      <span class="chip">.xlsx &mdash; Excel</span>
+      <span class="chip">.csv &mdash; Universal</span>
+      <span class="chip">.json &mdash; Developers</span>
+      <span class="chip">.pdf &mdash; Original files</span>
+      <span class="chip">email &mdash; Inbox delivery</span>
     </div>
+  </div>
 </section>
 
 <section class="section alt">
-    <div class="container">
-        <div class="cta-band">
-            <div>
-                <h2>Which file would you like<br/><em>to never download again?</em></h2>
-                <p>Describe your case - we evaluate for free and propose a tailored quote.</p>
-            </div>
-            <a href="contact.html" class="btn-accent">Request DataThread -></a>
-        </div>
+  <div class="container">
+    <div class="eyebrow">How it works</div>
+    <h2>Simple from start<br/><em>to finish.</em></h2>
+    <p class="sec-sub">No code to write on your end.</p>
+    <div class="steps">
+  <div class="step"><div class="step-num">01</div><h3>Describe the site and data</h3><p>URL, what you want to extract and how often. If login required, you share credentials privately afterwards.</p></div>
+  <div class="step"><div class="step-num">02</div><h3>We assess feasibility</h3><p>We check for anti-bot protections and tell you what's possible — free and no commitment.</p></div>
+  <div class="step"><div class="step-num">03</div><h3>We build the scraper</h3><p>Once the quote is confirmed, we set everything up. Usually live within a few days.</p></div>
+  <div class="step"><div class="step-num">04</div><h3>Data arriving</h3><p>You receive files at the time you chose. Maintenance included if the site changes structure.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Which data would you never<br/><em>want to search for again?</em></h2>
+        <p>Free evaluation — we'll tell you right away if it's feasible.</p>
+      </div>
+      <a href="contact.html" class="btn-primary">request DataThread -></a>
+    </div>
+  </div>
 </section>
 
 <footer class="site-footer">
-    <div class="footer-inner">
-        <a href="../index.html" class="logo">
-            <span class="logo-mark">F32</span>
-            F32Lab
-        </a>
-        <div class="footer-links">
-            <a href="datathread.html">DataThread</a>
-            <a href="alertthread.html">AlertFilo</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <p>2025 F32Lab - Switzerland</p>
+  <div class="footer-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">F32</span>
+      <span class="logo-name">F32Lab</span>
+    </a>
+    <div class="footer-links">
+      <a href="datathread.html">DataThread</a>
+      <a href="alertthread.html">AlertThread</a>
+      <a href="contact.html">Contact</a>
     </div>
+    <p>F32Lab &copy; 2026 &mdash; Switzerland</p>
+  </div>
 </footer>
-
 <script src="../js/main.js"></script>
-
 </body>
 </html>

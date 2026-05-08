@@ -1,160 +1,149 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contatto - F32Lab</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Lora:ital,wght@1,400;1,500&display=swap"
-          rel="stylesheet"/>
-    <link rel="stylesheet" href="../css/base.css"/>
-    <link rel="stylesheet" href="../css/nav.css"/>
-    <link rel="stylesheet" href="../css/pages.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contatto — F32Lab</title>
+  <link rel="stylesheet" href="../css/base.css"/>
+  <link rel="stylesheet" href="../css/nav.css"/>
+  <link rel="stylesheet" href="../css/pages.css"/>
 </head>
-<body>
+<body data-theme="contact">
 
 <nav class="site-nav">
-    <a href="../index.html" class="logo">
-        <span class="logo-mark">F32</span>
-        F32Lab
-    </a>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="datathread.html">DataThread</a></li>
-        <li><a href="alertthread.html">AlertThread</a></li>
-        <li><a href="contatto.html">Contatto</a></li>
-    </ul>
+  <a href="../index.html" class="logo">
+    <span class="logo-mark">F32</span>
+    <span class="logo-name">F32Lab</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="datathread.html">DataThread</a></li>
+    <li><a href="alertthread.html">AlertThread</a></li>
+    <li><a href="contatto.html">Contatto</a></li>
+  </ul>
+  <div class="nav-right">
     <div class="lang-switch">
-        <a href="../it/#" data-lang="it">IT</a>
-        <span class="lang-sep">/</span>
-        <a href="../en/contact.html" data-lang="en">EN</a>
+      <a href="../it/contatto.html" data-lang="it">IT</a>
+      <a href="../en/contact.html" data-lang="en">EN</a>
     </div>
     <a href="../index.html" class="nav-back"><- Home</a>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
+  </div>
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="datathread.html">DataThread</a>
-    <a href="alertthread.html">AlertThread</a>
-    <a href="contatto.html">Contatto</a>
-    <div class="mobile-lang">
-        <a href="../it/contatto.html" data-lang="it">IT - Italiano</a>
-        <a href="../en/contact.html" data-lang="en">EN - English</a>
-    </div>
-
+  <a href="index.html">Home</a>
+  <a href="datathread.html">DataThread</a>
+  <a href="alertthread.html">AlertThread</a>
+  <a href="contatto.html">Contatto</a>
+  <div class="mobile-lang">
+    <a href="../it/contatto.html" data-lang="it">IT — Italiano</a>
+    <a href="../en/contact.html" data-lang="en">EN — English</a>
+  </div>
+  
 </div>
 
 <main class="contact-page">
 
-    <div class="contact-left">
-        <div class="contact-left-inner">
-            <div class="eyebrow">Contatto</div>
-            <h1>Dimmi di cosa<br/>hai <em>bisogno.</em></h1>
-            <p class="sub">Compila il form con i dettagli della tua richiesta. Ti rispondo entro 48 ore con una
-                valutazione gratuita e un preventivo.</p>
-            <div class="service-selector">
-                <div class="svc-badge"><span class="svc-dot green"></span><span class="svc-name">DataThread</span><span
-                        class="svc-desc">Scaricamento dati e file</span></div>
-                <div class="svc-badge"><span class="svc-dot yellow"></span><span
-                        class="svc-name">AlertThread</span><span class="svc-desc">Monitoraggio cambiamenti</span></div>
-            </div>
-            <div class="info-cards">
-                <div class="info-card"><span class="ic-tag">gratis</span>
-                    <div><strong>Nessun impegno iniziale</strong>
-                        <p>La valutazione e' gratuita. Decidi tu se procedere.</p></div>
-                </div>
-                <div class="info-card"><span class="ic-tag">48h</span>
-                    <div><strong>Risposta rapida</strong>
-                        <p>Ricevi un preventivo chiaro entro due giorni lavorativi.</p></div>
-                </div>
-                <div class="info-card"><span class="ic-tag">sicuro</span>
-                    <div><strong>Credenziali protette</strong>
-                        <p>Non inserire password nel form - le raccogliamo privatamente dopo.</p></div>
-                </div>
-            </div>
+  <div class="contact-left">
+    <div class="contact-left-inner">
+      <div class="eyebrow">Invia una richiesta</div>
+      <h1>Dimmi di cosa<br/>hai <em>bisogno.</em></h1>
+      <p class="sub">Compila il form con i dettagli della tua richiesta. Ti rispondo entro 48 ore con valutazione e preventivo.</p>
+      <div class="service-selector">
+        <div class="svc-badge">
+          <span class="svc-dot blue"></span>
+          <span class="svc-name">DataThread</span>
+          <span class="svc-desc">Scaricamento dati e file</span>
         </div>
+        <div class="svc-badge">
+          <span class="svc-dot" style="background:#f5a623;box-shadow:0 0 6px rgba(245,166,35,0.5);"></span>
+          <span class="svc-name">AlertThread</span>
+          <span class="svc-desc">Monitoraggio cambiamenti</span>
+        </div>
+      </div>
+      <div class="info-cards">
+        <div class="info-card"><span class="ic-tag">gratis</span><div><strong>Nessun impegno</strong><p>La valutazione è gratuita. Decidi tu se procedere.</p></div></div>
+        <div class="info-card"><span class="ic-tag">48h</span><div><strong>Risposta rapida</strong><p>Ricevi un preventivo chiaro entro due giorni lavorativi.</p></div></div>
+        <div class="info-card"><span class="ic-tag">sicuro</span><div><strong>Credenziali protette</strong><p>Non inserire password nel form — le raccogliamo privatamente dopo.</p></div></div>
+      </div>
     </div>
+  </div>
 
-    <div class="contact-right">
-        <h2>Invia la tua richiesta</h2>
-        <form id="contact-form">
-            <div class="form-stack">
-                <div class="field">
-                    <label for="nome">Nome e cognome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required/>
-                </div>
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="mario@esempio.com" required/>
-                </div>
-                <div class="field">
-                    <label for="servizio">Servizio di interesse</label>
-                    <select id="servizio" name="servizio" required>
-                        <option value="">Seleziona...</option>
-                        <option value="datathread">DataThread - Scaricamento dati e file</option>
-                        <option value="alertthread">AlertThread - Monitoraggio cambiamenti</option>
-                        <option value="entrambi">Entrambi i servizi</option>
-                        <option value="altro">Non sono sicuro - aiutami a scegliere</option>
-                    </select>
-                </div>
-                <div class="field">
-                    <label for="sito">Sito di riferimento (opzionale)</label>
-                    <input type="text" id="sito" name="sito" placeholder="https://esempio.com"/>
-                </div>
-                <div class="field">
-                    <label for="frequenza">Frequenza desiderata</label>
-                    <select id="frequenza" name="frequenza">
-                        <option value="">Seleziona...</option>
-                        <option value="realtime">In tempo reale</option>
-                        <option value="giornaliero">Ogni giorno</option>
-                        <option value="settimanale">Ogni settimana</option>
-                        <option value="mensile">Ogni mese</option>
-                        <option value="nonSo">Non so ancora</option>
-                    </select>
-                </div>
-                <div class="field last">
-                    <label for="messaggio">Descrivi la tua esigenza</label>
-                    <textarea id="messaggio" name="messaggio"
-                              placeholder="Es: Vorrei ricevere una notifica quando il sito pubblica nuovi documenti..."
-                              required></textarea>
-                </div>
-            </div>
-            <div class="privacy-note">
-                <span class="p-tag">nota</span>
-                <p>Non inserire password o credenziali in questo form. Le raccoglieremo privatamente dopo la conferma
-                    del preventivo.</p>
-            </div>
-            <button type="submit" class="btn-submit">Invia richiesta <span>-&gt;</span></button>
-        </form>
-        <div class="success-box" id="success-box">
-            <span class="success-icon">&#10003;</span>
-            <h2>Richiesta inviata!</h2>
-            <p>Ti rispondo entro 48 ore con valutazione e preventivo personalizzato.</p>
+  <div class="contact-right">
+    <h2>La tua richiesta</h2>
+    <form id="contact-form">
+      <div class="form-stack">
+        <div class="field">
+          <label for="nome">Nome e cognome</label>
+          <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required/>
         </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="mario@esempio.com" required/>
+        </div>
+        <div class="field">
+          <label for="servizio">Servizio di interesse</label>
+          <select id="servizio" name="servizio" required>
+          <option value="">Seleziona...</option>
+          <option value="datathread">DataThread — Scaricamento dati</option>
+          <option value="alertthread">AlertThread — Monitoraggio cambiamenti</option>
+          <option value="entrambi">Entrambi i servizi</option>
+          <option value="altro">Non sono sicuro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sito">Sito di riferimento (opzionale)</label>
+          <input type="text" id="sito" name="sito" placeholder="https://esempio.com"/>
+        </div>
+        <div class="field">
+          <label for="frequenza">Frequenza desiderata</label>
+          <select id="frequenza" name="frequenza">
+          <option value="">Seleziona...</option>
+          <option value="realtime">In tempo reale</option>
+          <option value="daily">Ogni giorno</option>
+          <option value="weekly">Ogni settimana</option>
+          <option value="monthly">Ogni mese</option>
+          <option value="tbd">Non so ancora</option>
+          </select>
+        </div>
+        <div class="field last">
+          <label for="messaggio">Descrivi la tua esigenza</label>
+          <textarea id="messaggio" name="messaggio" placeholder="Es: Ho bisogno di scaricare le fatture mensili dal portale fornitore..." required></textarea>
+        </div>
+      </div>
+      <div class="privacy-note">
+        <span class="p-tag">nota</span>
+        <p>Non inserire password o credenziali nel form. Le raccoglieremo privatamente dopo la conferma del preventivo.</p>
+      </div>
+      <button type="submit" class="btn-submit">invia richiesta <span>-&gt;</span></button>
+    </form>
+    <div class="success-box" id="success-box">
+      <span class="success-icon">&#10003;</span>
+      <h2>Richiesta inviata!</h2>
+      <p>Ti rispondo entro 48 ore con valutazione e preventivo.</p>
     </div>
+  </div>
 
 </main>
 
 <footer class="site-footer">
-    <div class="footer-inner">
-        <a href="../index.html" class="logo">
-            <span class="logo-mark">F32</span>
-            F32Lab
-        </a>
-        <div class="footer-links">
-            <a href="datathread.html">DataThread</a>
-            <a href="alertthread.html">AlertThread</a>
-            <a href="contatto.html">Contatto</a>
-        </div>
-        <p>2026 F32Lab - Switzerland</p>
+  <div class="footer-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">F32</span>
+      <span class="logo-name">F32Lab</span>
+    </a>
+    <div class="footer-links">
+      <a href="datathread.html">DataThread</a>
+      <a href="alertthread.html">AlertThread</a>
+      <a href="contatto.html">Contatto</a>
     </div>
+    <p>F32Lab &copy; 2026 &mdash; Switzerland</p>
+  </div>
 </footer>
-
 <script src="../js/main.js"></script>
 <script src="../js/contact.js"></script>
-
 </body>
 </html>
