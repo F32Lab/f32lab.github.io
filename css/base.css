@@ -308,12 +308,21 @@ h3 {
 .step:hover { background: var(--page-surface2); }
 
 .step-num {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  color: var(--page-accent);
-  letter-spacing: 0.12em;
-  margin-bottom: 1.8rem;
-  opacity: 0.8;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-stretch: 125%;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--page-border2);
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+  line-height: 0.9;
+  display: block;
+  transition: -webkit-text-stroke-color 0.3s;
+}
+
+.step:hover .step-num {
+  -webkit-text-stroke-color: var(--page-accent);
 }
 
 .step p { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
@@ -350,11 +359,21 @@ h3 {
 .uc:hover::before { height: 100%; }
 
 .uc-num {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  color: var(--page-border2);
-  letter-spacing: 0.1em;
-  margin-bottom: 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-stretch: 125%;
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--page-border);
+  letter-spacing: -0.04em;
+  margin-bottom: 0.6rem;
+  line-height: 0.9;
+  display: block;
+  transition: -webkit-text-stroke-color 0.25s;
+}
+
+.uc:hover .uc-num {
+  -webkit-text-stroke-color: var(--page-accent);
 }
 
 .uc h3 { font-size: 0.95rem; margin-bottom: 0.6rem; }

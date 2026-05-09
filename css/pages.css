@@ -16,6 +16,16 @@
   overflow: hidden;
 }
 
+.hero::before,
+.hero-split::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.055) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
 .hero-inner {
   max-width: 1140px;
   margin: 0 auto;
@@ -36,7 +46,7 @@
   font-size: clamp(18rem, 38vw, 42rem);
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px var(--page-border);
+  -webkit-text-stroke: 1px var(--page-border2);
   pointer-events: none;
   user-select: none;
   z-index: 1;
@@ -171,6 +181,20 @@
   transition: background 0.2s;
   position: relative;
   overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--card-accent, var(--page-accent));
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}
+
+.service-card:hover::before {
+  opacity: 1;
 }
 
 .service-card::after {
