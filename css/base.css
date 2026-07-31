@@ -4,7 +4,9 @@
    Fonts: Cabinet Grotesk (display) + JetBrains Mono (code)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=JetBrains+Mono:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300;1,9..144,500&display=swap');
+/* Fonts are self-hosted: each page links css/fonts.css before this file,
+   so no visitor IP is sent to Google on page load. A <link> is used
+   rather than @import so the two stylesheets download in parallel. */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 

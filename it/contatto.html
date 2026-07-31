@@ -24,6 +24,7 @@
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"/>
   <link rel="icon" href="../assets/favicon-32.png" sizes="32x32"/>
   <link rel="apple-touch-icon" href="../assets/favicon-180.png"/>
+  <link rel="stylesheet" href="../css/fonts.css"/>
   <link rel="stylesheet" href="../css/base.css"/>
   <link rel="stylesheet" href="../css/nav.css"/>
   <link rel="stylesheet" href="../css/pages.css"/>
@@ -148,6 +149,10 @@
         <span class="p-tag">nota bene</span>
         <p>Le richieste fuori da DataThread e AlertThread - assistenza PC, supporto da remoto, lavori una tantum - le valuto caso per caso. Descrivila nel campo qui sopra e ti dico onestamente se posso occuparmene.</p>
       </div>
+      <div class="consent">
+        <input type="checkbox" id="consenso" name="privacy_consent" value="yes" required/>
+        <label for="consenso">Ho letto l'<a href="privacy.html" target="_blank" rel="noopener">informativa sulla privacy</a> e acconsento all'uso dei miei dati per valutare e rispondere a questa richiesta.</label>
+      </div>
       <button type="submit" class="btn-submit"><span class="btn-label">invia richiesta</span> <span>-&gt;</span></button>
       <div class="form-error" id="form-error" role="alert"></div>
     </form>
@@ -170,6 +175,7 @@
       <a href="datathread.html">DataThread</a>
       <a href="alertthread.html">AlertThread</a>
       <a href="contatto.html">Contatto</a>
+      <a href="privacy.html">Privacy</a>
     </div>
     <div class="footer-meta">
       <span class="footer-mail" data-mail-user="fabio.dso.2000" data-mail-host="gmail.com">fabio.dso.2000[at]gmail.com</span>

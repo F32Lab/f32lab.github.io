@@ -51,4 +51,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/contact.html"/>
   </url>
 
+  <url>
+    <loc>https://f32lab.github.io/it/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://f32lab.github.io/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/privacy.html"/>
+  </url>
+
 </urlset>

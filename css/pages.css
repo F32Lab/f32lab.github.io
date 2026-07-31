@@ -814,6 +814,120 @@
 
 .btn-submit[disabled]:hover { filter: none; transform: none; }
 
+/* Consent checkbox */
+.consent {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid var(--page-border2);
+  background: var(--page-surface);
+}
+
+.consent input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+  accent-color: var(--page-accent);
+  cursor: pointer;
+}
+
+.consent label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.consent a { color: var(--page-accent); }
+
+/* ══════════════════════════════════════════════
+   LEGAL - privacy policy
+   ══════════════════════════════════════════════ */
+
+.legal { max-width: 760px; }
+
+.legal .updated {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+.legal h2 {
+  font-size: 1.25rem;
+  margin: 2.8rem 0 0.9rem;
+  letter-spacing: -0.02em;
+}
+
+.legal h2:first-of-type { margin-top: 0; }
+
+.legal p,
+.legal li {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.legal p { margin-bottom: 1rem; }
+
+.legal ul {
+  padding-left: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.legal li { margin-bottom: 0.4rem; }
+
+.legal li::marker { color: var(--page-accent); }
+
+.legal a { color: var(--page-accent); }
+
+.legal strong { color: var(--cream); font-weight: 600; }
+
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.legal th,
+.legal td {
+  border: 1px solid var(--page-border);
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  color: var(--muted);
+  vertical-align: top;
+}
+
+.legal th {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--page-surface);
+  font-weight: 500;
+}
+
+.legal-table-wrap { overflow-x: auto; }
+
+/* Placeholders the site owner still has to fill in — deliberately loud
+   so they cannot ship unnoticed. */
+.fill-in {
+  color: #f5a623;
+  background: rgba(245,166,35,0.1);
+  border-bottom: 1px dashed #f5a623;
+  padding: 0.05rem 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
 .success-box { display: none; text-align: center; padding: 3.5rem 2rem; border: 1px solid var(--page-border); background: var(--page-surface); }
 .success-box.show { display: block; }
 .success-icon { font-family: var(--font-mono); font-size: 2rem; color: var(--page-accent); display: block; margin-bottom: 1rem; }
