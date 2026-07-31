@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://f32lab.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://f32lab.github.io/"/>
+  </url>
+
+  <url>
+    <loc>https://f32lab.github.io/it/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://f32lab.github.io/it/datathread.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/datathread.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/datathread.html"/>
+  </url>
+  <url>
+    <loc>https://f32lab.github.io/it/alertthread.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/alertthread.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/alertthread.html"/>
+  </url>
+  <url>
+    <loc>https://f32lab.github.io/it/contatto.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/contatto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/contact.html"/>
+  </url>
+
+  <url>
+    <loc>https://f32lab.github.io/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://f32lab.github.io/en/datathread.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/datathread.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/datathread.html"/>
+  </url>
+  <url>
+    <loc>https://f32lab.github.io/en/alertthread.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/alertthread.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/alertthread.html"/>
+  </url>
+  <url>
+    <loc>https://f32lab.github.io/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://f32lab.github.io/it/contatto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://f32lab.github.io/en/contact.html"/>
+  </url>
+
+</urlset>

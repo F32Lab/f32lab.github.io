@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://f32lab.github.io/sitemap.xml

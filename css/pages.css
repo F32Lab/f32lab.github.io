@@ -603,8 +603,9 @@
 .svc-badge:hover { border-color: var(--page-border2); background: var(--page-surface2); }
 
 .svc-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-.svc-dot.green  { background: #6dde8f; box-shadow: 0 0 6px rgba(109,222,143,0.5); }
-.svc-dot.blue   { background: #5ba3ff; box-shadow: 0 0 6px rgba(91,163,255,0.5); }
+.svc-dot.green   { background: #6dde8f; box-shadow: 0 0 6px rgba(109,222,143,0.5); }
+.svc-dot.blue    { background: #5ba3ff; box-shadow: 0 0 6px rgba(91,163,255,0.5); }
+.svc-dot.neutral { background: var(--muted); }
 
 .svc-name { font-family: var(--font-mono); font-size: 0.8rem; color: var(--cream); }
 .svc-desc { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
@@ -648,24 +649,33 @@
 
 .contact-right h2 { font-size: 1.4rem; margin-bottom: 2rem; }
 
-.form-stack { display: flex; flex-direction: column; }
-
-.field {
+/* Separators use `.field + .field` instead of per-edge borders so that
+   hiding a field with `display:none` never leaves a stray or doubled rule —
+   the next visible field just inherits the separator. The outer frame lives
+   on .form-stack, so it stays correct whatever is hidden. */
+.form-stack {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--page-border);
-  border-bottom: none;
-  background: var(--page-bg);
-  transition: all 0.15s;
 }
 
-.field:first-child { border-radius: 0; }
-.field.last { border-bottom: 1px solid var(--page-border); }
+.field {
+  background: var(--page-bg);
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.field + .field { border-top: 1px solid var(--page-border); }
+
+.field.is-hidden { display: none; }
 
 .field:focus-within {
   background: var(--page-surface);
-  border-color: var(--page-accent);
+  box-shadow: inset 2px 0 0 var(--page-accent);
   position: relative;
   z-index: 2;
 }
+
+.field:focus-within label { color: var(--page-accent); }
 
 .field label {
   display: block;
@@ -692,8 +702,11 @@
   resize: none;
 }
 
+/* --page-border2 is a border tone (~1.6:1 on the page background) and was
+   leaving placeholders effectively invisible. --placeholder is the dimmest
+   tone that still clears WCAG AA on every theme. */
 .field input::placeholder,
-.field textarea::placeholder { color: var(--page-border2); }
+.field textarea::placeholder { color: var(--placeholder); }
 
 .field select {
   appearance: none;
@@ -731,6 +744,49 @@
 
 .privacy-note p { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
 
+/* Shown only when "Other" is chosen in the service select */
+.form-note {
+  display: none;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid rgba(245,166,35,0.3);
+  background: rgba(245,166,35,0.05);
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.form-note.show { display: flex; }
+
+.form-note .p-tag {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: #f5a623;
+  background: rgba(245,166,35,0.12);
+  border: 1px solid rgba(245,166,35,0.3);
+  padding: 0.22rem 0.5rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  letter-spacing: 0.06em;
+}
+
+.form-note p { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+
+/* Shown when the submission does not go through */
+.form-error {
+  display: none;
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid rgba(232,131,106,0.35);
+  background: rgba(232,131,106,0.07);
+  font-size: 0.8rem;
+  color: var(--danger);
+  line-height: 1.65;
+}
+
+.form-error.show { display: block; }
+.form-error a { color: var(--danger); font-weight: 600; }
+
 .btn-submit {
   width: 100%;
   font-family: var(--font-mono);
@@ -748,6 +804,15 @@
 }
 
 .btn-submit:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+.btn-submit[disabled] {
+  opacity: 0.6;
+  cursor: wait;
+  filter: none;
+  transform: none;
+}
+
+.btn-submit[disabled]:hover { filter: none; transform: none; }
 
 .success-box { display: none; text-align: center; padding: 3.5rem 2rem; border: 1px solid var(--page-border); background: var(--page-surface); }
 .success-box.show { display: block; }

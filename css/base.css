@@ -81,6 +81,11 @@ body[data-theme="contact"] {
   --cream-dim:   #b8b099;
   --text:        #d4dcc8;
   --muted:       #627055;
+  /* Dimmest tone that still clears WCAG AA (4.5:1) on every theme's
+     --page-bg and --page-surface. Use this for placeholder/hint text —
+     --page-border2 is a border tone and only reaches ~1.6:1. */
+  --placeholder: #77876e;
+  --danger:      #e8836a;
   --font-display:'Anybody', sans-serif;
   --font-serif:  'Fraunces', serif;
   --font-mono:   'JetBrains Mono', monospace;

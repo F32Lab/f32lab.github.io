@@ -9,6 +9,18 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.lang-switch a, .mobile-lang a').forEach(function (a) {
     if (a.dataset.lang === lang) a.classList.add('active');
   });
+  /* The footer address is written as name[at]host and split across two data
+     attributes, so the markup holds nothing a scraper can lift. Rebuild a
+     working mailto: here — harvesters that don't run JS never see it.
+     The visible text stays in the [at] form on purpose. */
+  document.querySelectorAll('[data-mail-user][data-mail-host]').forEach(function (el) {
+    var a = document.createElement('a');
+    a.className = el.className;
+    a.href = 'mailto:' + el.dataset.mailUser + String.fromCharCode(64) + el.dataset.mailHost;
+    a.textContent = el.textContent;
+    el.parentNode.replaceChild(a, el);
+  });
+
   var btn = document.getElementById('nav-hamburger');
   var menu = document.getElementById('mobile-menu');
   if (!btn || !menu) return;
